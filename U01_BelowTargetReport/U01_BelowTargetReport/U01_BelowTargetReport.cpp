@@ -21,6 +21,8 @@
 #include <iomanip>                     // for formatting output
 using namespace std;
 
+string programmers_name = "Alex Peterson";
+string project_name = "U01_BelowTargetReport";
 /* Function: main() *************************************************
  *
  * application entry point
@@ -46,6 +48,13 @@ int main()
    //
    // display program headings
    //
+   ////Project/program name: U01_BelowTargetReport
+   //   by
+   //   Joe Blough
+   cout << "Project/program name: " << project_name << endl;
+   cout << "by" << endl;
+   cout << programmers_name << endl;
+   cout << endl;
 
 
 
@@ -119,9 +128,19 @@ int main()
 
 
 
+    /* main() program termination (required in all programs)
+     * -the main() function of all programs will always end with
+     *   1) cin.get()
+     *   2) return 0;
+     *   3) }        // ending curly brace
+     *
+     * cin.ignore() is sometimes not needed
+     * cin.get() is always needed
+     */
+    cin.ignore();
+    cin.get();
 
-
-return 0;
+   return 0;
 }
 // end of main() function ----------------------------------------
 
