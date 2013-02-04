@@ -37,8 +37,9 @@ int main()
    */
    string name;
    string choice;    
-    
-
+   string contributors_name; 
+   string target_contribution;
+   string actual_contribution;
 
 
 
@@ -70,6 +71,12 @@ int main()
       //
       // Step #1: input
       //
+      cout << "Enter contributor's name: ";
+      cin >> contributors_name; 
+      cout << "Enter target contribution: ";
+      cin >> target_contribution; 
+      cout << "Enter actul contribution: ";
+      cin >> actual_contribution; 
 
 
 
