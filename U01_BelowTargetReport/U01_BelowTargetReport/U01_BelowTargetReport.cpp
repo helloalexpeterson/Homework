@@ -49,9 +49,6 @@ int main()
    //
    // display program headings
    //
-   ////Project/program name: U01_BelowTargetReport
-   //   by
-   //   Joe Blough
    cout << "Project/program name: " << project_name << endl;
    cout << "by" << endl;
    cout << programmers_name << endl;
@@ -60,43 +57,28 @@ int main()
    // enter program loop (do while)
    do
    {
-      
-
-
-   
-
-
       //
       // Step #1: input
       //
       cout << "Enter contributor's name: ";
-      cin.ignore();
+      cin.ignore();                                // Required for getline() to work
       getline(cin, contributors_name);
       cout << "Enter target contribution: ";
       cin >> target_contribution; 
       cout << "Enter actual contribution: ";
       cin >> actual_contribution; 
 
-
-
-
       //
       // Step #2: processing
       //
       difference = target_contribution - actual_contribution;
 
-
-
-
       //
       // Step #3: output
       //
 
-
-
       // display the report column headings
       // format & print column heading row
-     
       cout << endl;
       
       cout << left;                       
@@ -128,15 +110,10 @@ int main()
       cout << setw(6);                   
       cout << target_contribution;
 
-
-
       // 3 - format & display actual contribution
       cout << right;                       
       cout << setw(10);                   
       cout << actual_contribution;
-
-
-
 
       // 4 - format & display difference
       // note: positive number means target met
@@ -144,26 +121,15 @@ int main()
       cout << setw(14);                   
       cout << difference;
       
-
-
-
-
       // see if the user wants to continue or to exit the program
-
       cout << endl << endl << "More contributions to process? (y/n): ";
       cin >> choice;
       cout << endl << "..........................." << endl;
-   } while (choice == "y" || choice == "Y" ); 
-
-
-
-
-
+   } while (choice == "y" || choice == "Y" );                        // The while loop loops the program again, allowing the user to input new information without using the same data that was stored in RAM
 
    //
    // program termination
    //
-
 
 
     /* main() program termination (required in all programs)
