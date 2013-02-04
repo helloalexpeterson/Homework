@@ -71,7 +71,7 @@ int main()
       //
       // Step #2: processing
       //
-      difference = target_contribution - actual_contribution;
+      difference = actual_contribution - target_contribution;
 
       //
       // Step #3: output
