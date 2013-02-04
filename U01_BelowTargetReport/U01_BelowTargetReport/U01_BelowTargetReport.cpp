@@ -3,7 +3,7 @@
  * Chuck Nelson, Professor
  *
  * Student Information (please complete ? below)
- *    Name:    ?
+ *    Name:    Alex Peterson
  *    Email:   s???????@student.rockvalleycollege.edu
  * Class Information
  *    Section:      ?
@@ -27,8 +27,8 @@ using namespace std;
  */
 
 // STUDENT CODE BEGINS
-
-
+int main()
+{
 
    /* declarations ***********************************************
       declare program data
@@ -121,10 +121,8 @@ using namespace std;
 
 
 
-
-
-
-
+return 0;
+}
 // end of main() function ----------------------------------------
 
 // STUDENT CODE ENDS
