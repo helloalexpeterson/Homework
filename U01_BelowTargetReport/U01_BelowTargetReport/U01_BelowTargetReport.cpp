@@ -35,8 +35,9 @@ int main()
    /* declarations ***********************************************
       declare program data
    */
-
-
+   string name;
+   string choice;    
+    
 
 
 
@@ -56,10 +57,14 @@ int main()
    cout << programmers_name << endl;
    cout << endl;
 
-
-
    // enter program loop (do while)
+   do
+   {
 
+
+
+
+   
 
 
       //
@@ -114,8 +119,9 @@ int main()
 
       // see if the user wants to continue or to exit the program
 
-
-
+      cout << "More contributions to process? (y/n): ";
+      cin >> choice;
+   } while (choice == "y" || choice == "Y" ); 
 
 
 
