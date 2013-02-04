@@ -35,12 +35,11 @@ int main()
    /* declarations ***********************************************
       declare program data
    */
-   string name;
    string choice;    
    string contributors_name; 
-   string target_contribution;
-   string actual_contribution;
-
+   int target_contribution;
+   int actual_contribution;
+   int difference; 
 
 
    /* statements *************************************************
@@ -61,8 +60,7 @@ int main()
    // enter program loop (do while)
    do
    {
-
-
+      
 
 
    
@@ -72,10 +70,11 @@ int main()
       // Step #1: input
       //
       cout << "Enter contributor's name: ";
-      cin >> contributors_name; 
+      cin.ignore();
+      getline(cin, contributors_name);
       cout << "Enter target contribution: ";
       cin >> target_contribution; 
-      cout << "Enter actul contribution: ";
+      cout << "Enter actual contribution: ";
       cin >> actual_contribution; 
 
 
@@ -84,7 +83,7 @@ int main()
       //
       // Step #2: processing
       //
-
+      difference = target_contribution - actual_contribution;
 
 
 
@@ -97,37 +96,63 @@ int main()
 
       // display the report column headings
       // format & print column heading row
+     
+      cout << endl;
+      
+      cout << left;                       
+      cout << setw(18);                   
+      cout << "Name";
 
+      cout << right;                       
+      cout << setw(6);                   
+      cout << "Target";
 
+      cout << right;                       
+      cout << setw(10);                   
+      cout << "Actual";
+
+      cout << right;                       
+      cout << setw(14);                   
+      cout << "Difference";
+      cout << endl << 
+         "------------------------------------------------" << endl ;
 
       // display the report detail line
       // 1 - format & display user name
       cout << left;                       // justification
       cout << setw(18);                   // width for column data
-      cout << name;
+      cout << contributors_name;
 
       // 2 - format & display target contribution
-
+      cout << right;                       
+      cout << setw(6);                   
+      cout << target_contribution;
 
 
 
       // 3 - format & display actual contribution
-
+      cout << right;                       
+      cout << setw(10);                   
+      cout << actual_contribution;
 
 
 
 
       // 4 - format & display difference
       // note: positive number means target met
-
+      cout << right;                       
+      cout << setw(14);                   
+      cout << difference;
+      
 
 
 
 
       // see if the user wants to continue or to exit the program
 
-      cout << "More contributions to process? (y/n): ";
+      cout << endl << endl << "More contributions to process? (y/n): ";
       cin >> choice;
+      cout << endl << "..........................." << endl;
    } while (choice == "y" || choice == "Y" ); 
 
 
