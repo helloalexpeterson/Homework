@@ -4,9 +4,9 @@
  *
  * Student Information (please complete ? below)
  *    Name:    Alex Peterson
- *    Email:   s???????@student.rockvalleycollege.edu
+ *    Email:   s0362809@student.rockvalleycollege.edu
  * Class Information
- *    Section:      ?
+ *    Section: D010
  * Assignment Information
  *    Project Name:  U01_BelowTargetReport
  *    Source  Name:  U01_BelowTargetReport.cpp
